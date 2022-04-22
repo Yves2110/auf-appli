@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: brown;
+    background-color: #ffffff;
+    max-height: 120px;
+    font-size: xx-large;
+    width: 100%;
+}
+
+.header img {
+    display: flex;
+    height: 120px;
+}
+
+.header img:last-child {
+    display: flex;
+    height: 70px;
+}
+
+.container-md img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 85%;
+    /* margin-left: 12.5%; */
+}
+
+.containe {
+    background-color: brown;
+}
+
+.container-md {
+    max-height: 766px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 7.33%;
+    padding-bottom: 4.33%;
+}
+
+.liste {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 450px;
+    /* margin-right: 15px; */
+    color: brown;
+    margin-bottom: 80px;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.liste img {
+    margin-right: 11px;
+}
+
+.img {
+    padding: 10px;
+}
+
+.ab h2 {
+    margin-left: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+
+@media only screen and (max-width:700px) {
+    .header img {
+        display: flex;
+        height: 40px;
+    }
+    .header img:last-child {
+        display: flex;
+        height: 30px;
+    }
+    .container-md img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 85%;
+        /* margin-left: 12.5%; */
+    }
+    .liste {
+        background-color: whitesmoke;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px;
+        /* margin-right: 15px; */
+        color: brown;
+        margin-bottom: 30px;
+    }
+    .row a {
+        text-decoration: none;
+    }
+    .liste img {
+        margin-right: 6px;
+    }
+    .img {
+        padding: 5px;
+    }
+    .ab h2 {
+        margin-left: 17px;
+    }
+    footer {
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: brown;
+    }
+}
