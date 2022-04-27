@@ -50,7 +50,7 @@ $yves->execute(array($nom, $prenom, $naissance, $genre, $debut_abonnement, $nume
             <h4 class="alert-heading do text-center font-weight-bold">Abonné enregistrer avec succés!</h4>
             
             <hr>
-  <p class="mb-0 text-center font-weight-bold"><a href="./Enregistrement.php" class="list-unstyled text-danger "> RETOUR</a></p>
+  <p class="mb-0 text-center font-weight-bold"><a href="./Enregistrement.php" class="list-unstyled text-light" style="margin-bottom: 250px;"> RETOUR</a></p>
 </div>
 </div>
         <div class="-offset-2">

@@ -65,7 +65,7 @@ include("./connexion.php")
                 echo "<td>" . $ligne["numero"] . "</td>";
                 echo "<td>" . $ligne["email"] . "</td>";
                 echo  "<td><a href='./icon.php?id=".$ligne["email"]."'> <i class='fa-solid fa-trash' style='color:brown;'></i></i> </a>
-                <a href='#'> <i class='fa-solid fa-pen' style='color:brown;'></i> </a></td>";
+                <a href='./modifier.php?id=".$ligne["email"]."'> <i class='fa-solid fa-pen' style='color:brown;'></i></i> </a></td>";
                 echo "</tr>";
   
                     }

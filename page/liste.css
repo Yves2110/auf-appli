@@ -62,7 +62,7 @@ footer {
         color: brown;
         background-color: #ffffff;
         max-height: 60px;
-        font-size: large;
+        font-size: 15px;
         width: 100%;
     }
     .header img {
@@ -83,8 +83,8 @@ footer {
         z-index: 100;
         background-color: silver;
         /* padding-left: 20px; */
-        margin-left: 15px;
-        margin-right: -25px;
+        /* margin-left: 15px;
+        margin-right: -25px; */
     }
     footer {
         min-height: 30px;
