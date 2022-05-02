@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enregistrement</title>
-    <link rel="stylesheet" href="Enregistrement.css">
+    <link rel="stylesheet" href="../style/Enregistrement.css">
     <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/all.css">
     <link rel="stylesheet" href="../style/fontawesome.css">
@@ -75,7 +75,7 @@
             </form>
         <br><br><br>
         <hr>
-  <p class="mb-0 text-center font-weight-bold"><a href="../index.php" class="list-unstyled text-light"> RETOUR</a></p>
+  <p class="mb-0 text-center font-weight-bold"><a href="./acceuil.php" class="list-unstyled text-light"> RETOUR</a></p>
         <br><br>
         <footer>
             copyright-AUF 2022

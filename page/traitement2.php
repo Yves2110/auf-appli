@@ -5,18 +5,16 @@ require_once './connexion.php'; //permet de connecter premierement a la base de 
 
 $nom = $_POST['nom'];//$_POST variable globale ou super globale
 $prenom = $_POST['prenom'];
-$naissance = $_POST['naissance'];
-$genre = $_POST['radio'];
-$debut_abonnement = $_POST['debut_abonnement'];
-$numero = $_POST['numero'];
+$mdp = md5($_POST['password']);
+
 $email = $_POST['email'];
 
-$yves = $aida->prepare('INSERT INTO listes (nom, prenom, naissance, genre, debut_abonnement, numero, email) VALUES(?, ?, ?, ?, ?, ?, ?)');
+$yves = $aida->prepare('INSERT INTO authentification (nom, prenom, email, mot_de_passe)
+ VALUES(?, ?, ?, ?)');
 
 
-$yves->execute(array($nom, $prenom, $naissance, $genre, $debut_abonnement, $numero, $email));// ce ci est appeler une requette preparer et il est un tableau
-// $data = array($nom, $prenom, $naissance, $genre, $debut_abonnement, $numero, $email);
-// $yves -> execute($data);
+$yves->execute(array($nom, $prenom, $email, $mdp));// ce ci est appeler une requette preparer et il est un tableau
+
 
 ?>
 
@@ -28,7 +26,7 @@ $yves->execute(array($nom, $prenom, $naissance, $genre, $debut_abonnement, $nume
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation</title>
     <link rel="stylesheet" href="../style/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/liste.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body class="bg-light">
@@ -36,7 +34,7 @@ $yves->execute(array($nom, $prenom, $naissance, $genre, $debut_abonnement, $nume
             <!-- <a href="../index.php"> -->
             <img src="../images/logo/index.png" alt=""></a>
             <p>
-                <h1>Enregistrement d'abonnés</h1>
+                <h1>Authentification</h1>
             </p>
             <img src="../images/logo/auf.png" alt="" class="img-fluid">
         </div>
@@ -46,11 +44,11 @@ $yves->execute(array($nom, $prenom, $naissance, $genre, $debut_abonnement, $nume
                 
                 </div>
         <div class="col-md-8 mt-5">
-        <div class="alert alert-danger mt-5 " role="alert">
-            <h4 class="alert-heading do text-center font-weight-bold">Abonné enregistrer avec succés!</h4>
+        <div class="alert alert-success mt-5 mb-5 " role="alert">
+            <h4 class="alert-heading do text-center font-weight-bold">Administrateur enregistré</h4>
             
             <hr>
-  <p class="mb-0 text-center font-weight-bold"><a href="./Enregistrement.php" class="list-unstyled text-light" style="margin-bottom: 250px;"> RETOUR</a></p>
+  <p class="mb-0 text-center font-weight-bold"><a href="../page/authentification.php" class="list-unstyled text-light" style="margin-bottom: 250px;">Connexion</a></p>
 </div>
 </div>
         <div class="-offset-2">
@@ -58,7 +56,7 @@ $yves->execute(array($nom, $prenom, $naissance, $genre, $debut_abonnement, $nume
             </div>
         </div>
     </div> 
-    <footer>
+    <footer class="mb-5">
         copyright-AUF 2022
     </footer>
 </body>
