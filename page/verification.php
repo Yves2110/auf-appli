@@ -5,16 +5,22 @@ require_once './connexion.php'; //permet de connecter premierement a la base de 
 
 
 $email = $_POST['email'];
-$mdp = md5($_POST['mot_de_passe']);
+$mdp = md5($_POST['password']);
 
-$yves = $aida->prepare('SELECT * FROM authentification WHERE mot_de_passe=$mdp , email=$email');
+$stmt = $aida->prepare( 'SELECT * FROM authentification WHERE email = ? and  mot_de_passe= ? ');
+$stmt->execute(array($email,$mdp));
+$user = $stmt->fetch();
 
-
-$yves->execute(array($mdp, $email));// ce ci est appeler une requette preparer et il est un tableau
-// $data = array($nom, $prenom, $naissance, $genre, $debut_abonnement, $numero, $email);
-// $yves -> execute($data);
-
-if($yves){
-    header('location:accueil.php');
+if (!$user)
+{
+    
+    header('location:./authentification.php?inv=3');
+} else {
+    
+    header('location:./acceuil.php');
 }
+
+// if($yves){
+//     header('location:accueil.php');
+// }
 ?>

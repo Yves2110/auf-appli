@@ -16,21 +16,21 @@
 <body>
     <div class="containe">
         <div class="header" class="col-xs">
-            <img src="./images/logo/index.png" alt="" class="col-xs">
+            <img src="../images/logo/index.png" alt="" class="col-xs">
             <p class="col-xs">
                 <h1>Bienvenue chers Administrateurs</h1>
             </p>
-            <img src="./images/logo/auf.png" alt="" class="col-xs">
+            <img src="../images/logo/auf.png" alt="" class="col-xs">
         </div>
         <div class="container-md col-xs">
-            <img src="./images/medium-shot-colleagues-at-business-meeting-compressed.jpg" alt="" class="img-fluid">
+            <img src="../images/medium-shot-colleagues-at-business-meeting-compressed.jpg" alt="" class="img-fluid">
         </div>
         <div class="container">
             <div class="row">
 
                 <a class="col-md-3" href="./Enregistrement.php">
                     <div class="liste">
-                        <img src="./images/Add User Group Man Man_48px.png" alt="" class="img img-fluid">
+                        <img src="../images/Add User Group Man Man_48px.png" alt="" class="img img-fluid">
                         <h2>
                             Enregistrement d'abonnés
                         </h2>
@@ -38,7 +38,7 @@
                 </a>
                 <a class="col-md-3 offset-sm-6" href="./Listes.php">
                     <div class="liste ab">
-                        <img src="./images/Edit Property_50px.png" alt=" " class="img img-fluid">
+                        <img src="../images/Edit Property_50px.png" alt=" " class="img img-fluid">
                         <h2>
                             Listes des abonnés
                         </h2>

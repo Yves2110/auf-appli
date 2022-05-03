@@ -59,9 +59,9 @@
         </form>
     </div>
     <br><br><br><br>
-    <a href="./page/authentification.php"></a>
+    <a href="./page/authentification.php">Se connecter</a>
     </div>
-    <footer style="margin-top: 350px;">
+    <footer style="margin-top:350px;">
         copyright-AUF 2022
     </footer>
 </body>

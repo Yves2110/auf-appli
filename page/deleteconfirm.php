@@ -1,12 +1,14 @@
-<SCRIPT LANGUAGE="JavaScript">
+
+
+<script>
 function confirmation() {
 let msg = "Êtes-vous sur de vouloir supprimer cet abonné ?";
 if (confirm(msg))
-location.replace(icon.php);
+location.replace(Listes.php);
 }
-</SCRIPT>
+</script>
 
-<INPUT TYPE="Button" onClick="confirmation();" VALUE="Supprimer">
+<input TYPE="Button" onClick="confirmation();" VALUE="Supprimer">
  
 <!-- 
 

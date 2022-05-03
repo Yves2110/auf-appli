@@ -64,8 +64,8 @@ include("./connexion.php")
                 echo "<td>" . $ligne["debut_abonnement"] . "</td>";
                 echo "<td>" . $ligne["numero"] . "</td>";
                 echo "<td>" . $ligne["email"] . "</td>";
-                echo  "<td><a href='./icon.php?id=".$ligne["email"]."'> <i class='fa-solid fa-trash' style='color:brown;'></i></i> </a>
-                <a href='./modifier.php?id=".$ligne["email"]."'> <i class='fa-solid fa-pen' style='color:brown;'></i></i> </a></td>";
+                echo  "<td><a href='./icon.php?id=".$ligne["email"]."' id='supp'> <i class='fa-solid fa-trash' style='color:brown;'></i></i> </a>
+              </td>";
                 echo "</tr>";
   
                     }
@@ -76,7 +76,7 @@ include("./connexion.php")
                 ?>
         </div>
         <hr>
-  <p class="mb-0 text-center font-weight-bold"><a href="./accueil.php" class="list-unstyled text-light ">ACCUEIL</a><a href="./Enregistrement.php" class="list-unstyled text-danger">RETOUR</a></p>
+  <p class="mb-0 text-center font-weight-bold"><a href="./accueil.php" class="list-unstyled text-light ">ACCUEIL</a><a href="./Enregistrement.php" class="list-unstyled text-light">RETOUR</a></p>
     </div>
 
 
@@ -84,5 +84,19 @@ include("./connexion.php")
         copyright-AUF 2022
     </footer>
 </body>
+<script>
+    let supprimer = document.getElementById("supp");
+    supprimer.addEventListener('click', (e)=>{
+        if (confirm("supprimer?"))
+        {
+            return true;
+        }
+        else {
+            e.preventDefault();
+            return false;
+        }
+
+    })
+</script>
 
 </html>
